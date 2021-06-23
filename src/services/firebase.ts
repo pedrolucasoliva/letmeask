@@ -19,4 +19,10 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const database = firebase.database();
 
+const roomRef = database.ref(`rooms/-McqMNZhRA8zhE9HxkCN`);
+
+roomRef.on('value', (room) => {
+  console.log(room.val());
+});
+
 export { firebase, auth, database };
