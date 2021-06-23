@@ -1,13 +1,11 @@
-
-import { Route, BrowserRouter } from 'react-router-dom'
+import { Route, BrowserRouter } from "react-router-dom";
 
 import { Home } from "./pages/Home";
 import { NewRoom } from "./pages/NewRoom";
 
-import { AuthContextProvider } from './context/AuthContext'
+import { AuthContextProvider } from "./context/AuthContext";
 
 export default function App() {
-
   return (
     <BrowserRouter>
       <AuthContextProvider>
@@ -15,5 +13,5 @@ export default function App() {
         <Route path="/rooms/new" component={NewRoom} />
       </AuthContextProvider>
     </BrowserRouter>
-  )
+  );
 }
