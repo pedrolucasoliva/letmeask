@@ -4,10 +4,10 @@
         "es2021": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "airbnb",
+        "eslint:recommended",
+        "plugin:react/recommended",/* 
+        "airbnb", */
         "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint",
         "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
@@ -19,35 +19,20 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "react-hooks",
-        "@typescript-eslint",
+        "react", 
+        "react-hooks", 
+        "@typescript-eslint", 
         "prettier"
     ],
     "rules": {
-        "prettier/prettier": "error",
-        "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn",
-        "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
-        "import/prefer-default-export": "off",
-        "@typescript-eslint/explicit-function-return-type": [
-          "error",
-          {
-            "allowExpressions": true
-          }
-        ],
-        "import/extensions": [
-          "error",
-          "ignorePackages",
-          {
-            "ts": "never",
-            "tsx": "never"
-          }
-        ]
-      },
-      "settings": {
-        "import/resolver": {
-          "typescript": {}
-        }
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
+        "react/require-default-props": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "typescript": {}
       }
+    }
 }
