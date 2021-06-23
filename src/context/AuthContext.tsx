@@ -1,8 +1,6 @@
-import { firebase, auth } from "../services/firebase";
-import { ReactNode } from "react";
-import { createContext } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import { ReactNode, createContext, useState, useEffect } from 'react';
+
+import { firebase, auth } from '../services/firebase';
 
 type User = {
   id: string;
@@ -30,7 +28,7 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
         const { displayName, photoURL, uid } = user;
 
         if (!displayName || !photoURL) {
-          throw new Error("Missing information!");
+          throw new Error('Missing information!');
         }
 
         setUser({
@@ -54,7 +52,7 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
       const { displayName, photoURL, uid } = result.user;
 
       if (!displayName || !photoURL) {
-        throw new Error("Missing information!");
+        throw new Error('Missing information!');
       }
 
       setUser({

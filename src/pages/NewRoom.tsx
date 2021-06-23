@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import { Button } from "../components/Button";
+import { Button } from '../components/Button';
 
-import ilustationImg from "../assets/images/illustration.svg";
-import logoImg from "../assets/images/logo.svg";
+import ilustationImg from '../assets/images/illustration.svg';
+import logoImg from '../assets/images/logo.svg';
 
-import "../styles/auth.scss";
+import '../styles/auth.scss';
 
 export function NewRoom() {
   return (

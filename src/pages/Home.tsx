@@ -1,13 +1,13 @@
-import { useHistory } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 
-import { Button } from "../components/Button";
+import { Button } from '../components/Button';
 
-import ilustationImg from "../assets/images/illustration.svg";
-import logoImg from "../assets/images/logo.svg";
-import googleIconImg from "../assets/images/google-icon.svg";
+import ilustationImg from '../assets/images/illustration.svg';
+import logoImg from '../assets/images/logo.svg';
+import googleIconImg from '../assets/images/google-icon.svg';
 
-import "../styles/auth.scss";
-import { useAuth } from "../hooks/useAuth";
+import '../styles/auth.scss';
+import { useAuth } from '../hooks/useAuth';
 
 export function Home() {
   const history = useHistory();
@@ -18,7 +18,7 @@ export function Home() {
       await signInWithGoogle();
     }
 
-    history.push("/rooms/new");
+    history.push('/rooms/new');
   }
 
   return (
